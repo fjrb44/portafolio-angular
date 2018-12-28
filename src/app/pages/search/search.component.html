@@ -1,6 +1,5 @@
 <section class="">
-
-  <!-- 1 -->
+  <!-- 1 
   <div align="center" *ngIf="producosService.cargando">
     <h2>Cargando</h2>
     
@@ -24,10 +23,10 @@
     </div>
     <p>Espere por favor</p>
   </div>
+  -->
   
-  
-  <div class="fadeIn ae-masonry ae-masonry-md-2 ae-masonry-xl-4" *ngIf="!producosService.cargando">
-    <a *ngFor="let producto of producosService.productos" 
+  <div class="fadeIn ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+    <a *ngFor="let producto of productoService.productosFiltrado" 
       [routerLink]="['/item', producto.cod]" class="animated fadeIn rk-item ae-masonry__item">
       <img src="assets/img/{{ producto.url }}.jpg" alt="">
       <div class="item-meta">
